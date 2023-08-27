@@ -197,7 +197,7 @@ bindsym $mod+u            exec "fcitx5-remote -e"
 bindsym $mod+Shift+u      exec "fcitx5 -d"
 bindsym Print             exec "flameshot gui"
 bindsym Pause             exec "playerctl play-pause"
-bindsym $mod+Shift+Return exec "i3-tabbed i3-sensible-terminal"
+bindsym $mod+Shift+Return exec "i3-stacking i3-sensible-terminal"
 
 bindsym $mod+bracketleft  workspace prev
 bindsym $mod+bracketright workspace next
