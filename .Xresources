@@ -1,0 +1,10 @@
+Xft.dpi: 192
+
+Xft.antialias:  1
+Xft.autohint:   0
+Xft.hinting:    1
+Xft.hintstyle:  hintslight
+Xft.rgba:       rgb
+
+*foreground: #e4e4ef
+*background: #181818

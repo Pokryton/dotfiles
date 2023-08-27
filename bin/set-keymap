@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+set -x
+
+setxkbmap -option ""
+
+case "${1:-v}" in
+    v|vi)
+        setxkbmap -option "caps:escape_shifted_capslock"
+        ;;
+    *)
+        setxkbmap -option "ctrl:swapcaps"
+        # setxkbmap -option "ctrl:swap_rwin_rctl"
+        ;;
+esac
