@@ -8,8 +8,9 @@ case "${1:-v}" in
     v|vi)
         setxkbmap -option "caps:escape_shifted_capslock"
         ;;
-    *)
+    e|emacs)
         setxkbmap -option "ctrl:swapcaps"
-        # setxkbmap -option "ctrl:swap_rwin_rctl"
+        ;;
+    n|no)
         ;;
 esac
