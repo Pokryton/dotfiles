@@ -1,3 +1,7 @@
 [user]
 	name = lvsh
 	email = 2429894846@qq.com
+[diff]
+	tool = nvimdiff
+[merge]
+	tool = nvimdiff
