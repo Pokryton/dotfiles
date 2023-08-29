@@ -8,6 +8,8 @@ setopt completeinword
 setopt nobeep
 
 bindkey -e
+stty stop undef
+
 eval $(dircolors -b)
 
 # zstyle :compinstall filename "$HOME/.zshrc"
