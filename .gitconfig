@@ -1,7 +1,13 @@
 [user]
 	name = lvsh
 	email = 2429894846@qq.com
+[init]
+	defaultBranch = main
 [diff]
 	tool = nvimdiff
 [merge]
 	tool = nvimdiff
+	conflictstyle = diff3
+[alias]
+	ll = log --oneline --decorate
+	tree = log --graph --oneline --decorate --all
