@@ -3,13 +3,13 @@ vim.g.mapleader = " "
 vim.keymap.set("", "H", "^")
 vim.keymap.set("", "L", "$")
 
-vim.keymap.set("", "<Left>", "<Cmd>bp<CR>")
-vim.keymap.set("", "<Right>", "<Cmd>bn<CR>")
+vim.keymap.set({"n", "i"}, "<Left>", "<Cmd>bp<CR>")
+vim.keymap.set({"n", "i"}, "<Right>", "<Cmd>bn<CR>")
 
-vim.keymap.set("", "<A-h>", "<C-w>h")
-vim.keymap.set("", "<A-j>", "<C-w>j")
-vim.keymap.set("", "<A-k>", "<C-w>k")
-vim.keymap.set("", "<A-l>", "<C-w>l")
+vim.keymap.set({"n", "t"}, "<A-h>", "<C-w>h")
+vim.keymap.set({"n", "t"}, "<A-j>", "<C-w>j")
+vim.keymap.set({"n", "t"}, "<A-k>", "<C-w>k")
+vim.keymap.set({"n", "t"}, "<A-l>", "<C-w>l")
 
 vim.keymap.set("n", "[q", "<Cmd>cprev<CR>")
 vim.keymap.set("n", "]q", "<Cmd>cnext<CR>")
