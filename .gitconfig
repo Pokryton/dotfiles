@@ -8,6 +8,8 @@
 [merge]
 	tool = nvimdiff
 	conflictstyle = diff3
+[mergetool]
+	keepBackup = false
 [alias]
 	ll = log --oneline --decorate
 	tree = log --graph --oneline --decorate --all
