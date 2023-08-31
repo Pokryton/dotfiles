@@ -198,7 +198,7 @@ bindsym $mod+Shift+u      exec "fcitx5 -d"
 bindsym Print             exec "flameshot gui"
 bindsym Pause             exec "playerctl play-pause"
 bindsym $mod+Mod1+s       exec "i3-sensible-layout"
-bindsym $mod+Mod1+Return  exec "i3-sensible-layout i3-sensible-terminal"
+bindsym $mod+Shift+Return exec "i3-sensible-layout i3-sensible-terminal"
 
 bindsym $mod+bracketleft  workspace prev
 bindsym $mod+bracketright workspace next
