@@ -8,3 +8,4 @@ Xft.rgba:       rgb
 
 *foreground: #e4e4ef
 *background: #181818
+*font: monospace:size=11
