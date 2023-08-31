@@ -4,13 +4,11 @@ set -x
 
 setxkbmap -option ""
 
-case "${1:-v}" in
+case "${1}" in
     v|vi)
         setxkbmap -option "caps:escape_shifted_capslock"
         ;;
     e|emacs)
         setxkbmap -option "ctrl:swapcaps"
-        ;;
-    n|no)
         ;;
 esac
