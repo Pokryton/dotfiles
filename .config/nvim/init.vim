@@ -20,6 +20,9 @@ command! -nargs=+ Make execute "silent make! <args>" | copen
 " cnoreabbrev grep Grep
 " cnoreabbrev make Make
 
+autocmd TermOpen * startinsert
+autocmd TermClose * if !v:event.status | exe "bd! "..expand("<abuf>") | endif
+
 noremap H ^
 noremap L $
 
@@ -35,12 +38,7 @@ nnoremap <A-l> <C-w>l
 nnoremap <A-c> <C-w>c
 nnoremap <A-o> <C-w>o
 
-tnoremap <A-h> <C-w>h
-tnoremap <A-j> <C-w>j
-tnoremap <A-k> <C-w>k
-tnoremap <A-l> <C-w>l
-tnoremap <A-c> <C-w>c
-tnoremap <A-o> <C-w>o
+tnoremap <Esc> <C-\><C-N>
 
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
