@@ -45,8 +45,6 @@ alias ls='exa'
 alias la='exa -a'
 alias ll='exa -al'
 alias tree='exa --tree'
-alias vimdiff='nvim -d'
-
 alias gitroot='cd $(git rev-parse --show-toplevel)'
 
 # echo '( .-.)'
