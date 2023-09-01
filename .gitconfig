@@ -13,3 +13,5 @@
 [alias]
 	ll = log --oneline --decorate
 	tree = log --graph --oneline --decorate --all
+[grep]
+	extendedRegexp = true
