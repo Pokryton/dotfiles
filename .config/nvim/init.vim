@@ -6,6 +6,7 @@ set splitright splitbelow
 
 set undofile
 set clipboard+=unnamedplus
+set title
 set scrolloff=2
 let g:tex_flavor = "latex"
 
