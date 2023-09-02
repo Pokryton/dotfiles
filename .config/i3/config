@@ -220,6 +220,5 @@ for_window [class="Clash for Windows"]          floating enable
 assign [class="steam"] → number 3
 assign [class="QQ"]    → number 2
 
-exec "set-keymap v"
-# exec "$HOME/.fehbg"
-# exec "wlt-connect"
+exec "set-keymap vi"
+exec "wlt-connect"
