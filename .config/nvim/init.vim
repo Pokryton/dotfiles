@@ -45,9 +45,10 @@ tnoremap <A-o> <C-w>o
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
 cnoremap <C-f> <Right>
-cnoremap <C-b> <Left>
 cnoremap <A-f> <S-Right>
+cnoremap <C-b> <Left>
 cnoremap <A-b> <S-Left>
+cnoremap <C-d> <Del>
 
 inoremap <C-h> <Cmd>nohls<CR>
 nnoremap <C-h> <Cmd>nohls<CR>
