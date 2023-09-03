@@ -200,11 +200,15 @@ bindsym Pause             exec "playerctl play-pause"
 bindsym $mod+Mod1+s       exec "i3-sensible-layout"
 bindsym $mod+Shift+Return exec "i3-sensible-layout i3-sensible-terminal"
 
+bindsym --release Scroll_Lock exec "slock"
+
 bindsym $mod+bracketleft  workspace prev
 bindsym $mod+bracketright workspace next
+bindsym $mod+Shift+bracketleft   move container to workspace prev
+bindsym $mod+Shift+bracketright  move container to workspace next
 
-bindsym --release Scroll_Lock exec "slock"
-# bindsym --release $mod+Mod1+L exec "slock"
+bindsym $mod+Tab workspace back_and_forth
+bindsym $mod+Shift+Tab move container to workspace back_and_forth
 
 for_window [window_role="About"]     floating enable
 for_window [class="dialog"]          floating enable
