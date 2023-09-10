@@ -5,6 +5,7 @@ SAVEHIST=10000
 setopt sharehistory
 setopt longlistjobs
 setopt completeinword
+setopt autocd
 setopt nobeep
 
 bindkey -e
