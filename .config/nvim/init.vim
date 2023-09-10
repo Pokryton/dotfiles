@@ -16,8 +16,7 @@ set formatoptions=/nBjcroql
 set grepprg=rg\ --vimgrep\ --smart-case
 set grepformat=%f:%l:%c:%m
 
-command! -nargs=* Make write | silent make! <args> | copen
-command! -nargs=+ Grep         silent grep! <args> | copen
+command! -nargs=+ Grep silent grep! <args> | copen
 
 autocmd TermOpen * startinsert
 autocmd TermClose * if !v:event.status | exe "bd! "..expand("<abuf>") | endif
