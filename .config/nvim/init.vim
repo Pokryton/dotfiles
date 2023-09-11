@@ -4,6 +4,7 @@ set number relativenumber
 set ignorecase smartcase
 set splitright splitbelow
 
+set autowrite
 set undofile
 set clipboard+=unnamedplus
 set title
