@@ -36,6 +36,9 @@ alias grep='grep --color=auto'
 alias diff='diff --color=auto'
 alias ip='ip -color=auto'
 
+alias mv='mv -i'
+alias cp='cp -i'
+
 alias ls='eza'
 alias la='eza -a'
 alias ll='eza -al'
