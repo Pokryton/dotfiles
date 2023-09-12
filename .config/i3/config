@@ -227,3 +227,4 @@ assign [class="QQ"]    → number 2
 
 exec "set-keymap vi"
 exec "wlt-connect"
+exec "$HOME/.fehbg"
