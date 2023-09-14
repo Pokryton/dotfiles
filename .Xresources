@@ -6,6 +6,6 @@ Xft.hinting:    1
 Xft.hintstyle:  hintslight
 Xft.rgba:       rgb
 
-*foreground: #e4e4ef
-*background: #181818
+*background: #3f3f3f
+*foreground: #dcdccc
 *font: monospace:size=11
