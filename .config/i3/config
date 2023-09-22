@@ -197,8 +197,6 @@ bindsym $mod+u            exec "fcitx5-remote -e"
 bindsym $mod+Shift+u      exec "fcitx5 -d"
 bindsym Print             exec "flameshot gui"
 bindsym Pause             exec "playerctl play-pause"
-bindsym $mod+Mod1+s       exec "i3-sensible-layout"
-bindsym $mod+Shift+Return exec "i3-sensible-layout i3-sensible-terminal"
 
 # bindsym --release Scroll_Lock exec "slock"
 
