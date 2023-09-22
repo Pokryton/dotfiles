@@ -2,11 +2,12 @@ HISTFILE=~/.histfile
 HISTSIZE=10000
 SAVEHIST=10000
 
-setopt sharehistory
+setopt autocd
 setopt longlistjobs
 setopt completeinword
-setopt autocd
-setopt nobeep
+setopt sharehistory
+setopt histexpiredupsfirst
+setopt histignorespace
 
 bindkey -e
 stty stop undef
