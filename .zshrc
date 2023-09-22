@@ -32,17 +32,21 @@ autoload -z edit-command-line
 zle -N edit-command-line
 bindkey "^X^E" edit-command-line
 
-alias grep='grep --color=auto'
-alias diff='diff --color=auto'
-alias ip='ip -color=auto'
-
-alias mv='mv -i'
-alias cp='cp -i'
-
 alias ls='eza'
 alias la='eza -a'
 alias ll='eza -al'
 alias tree='eza --tree'
+
+alias mv='mv -i'
+alias cp='cp -i'
+
+alias grep='grep --color=auto'
+alias diff='diff --color=auto'
+alias ip='ip -color=auto'
+
+alias vim='nvim'
+alias vimdiff='nvim -d'
+
 alias gitroot='cd $(git rev-parse --show-toplevel)'
 
 # echo '( .-.)'
