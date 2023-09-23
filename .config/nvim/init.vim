@@ -16,11 +16,7 @@ set formatoptions=/nBjcroql
 
 set grepprg=rg\ --vimgrep\ --smart-case
 set grepformat=%f:%l:%c:%m
-
-command! -nargs=+ Grep silent grep! <args> | copen
-
-autocmd TermOpen * startinsert
-autocmd TermClose * if !v:event.status | exe "bd! "..expand("<abuf>") | endif
+command! -nargs=+ Grep silent grep! <args> | copen | wincmd p
 
 noremap H ^
 noremap L $
@@ -29,13 +25,6 @@ noremap [q <Cmd>cp<CR>
 noremap ]q <Cmd>cn<CR>
 noremap [b <Cmd>bp<CR>
 noremap ]b <Cmd>bn<CR>
-
-nnoremap <A-h> <C-w>h
-nnoremap <A-j> <C-w>j
-nnoremap <A-k> <C-w>k
-nnoremap <A-l> <C-w>l
-nnoremap <A-c> <C-w>c
-nnoremap <A-o> <C-w>o
 
 tnoremap <Esc> <C-\><C-N>
 
