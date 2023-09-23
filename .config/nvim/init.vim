@@ -14,7 +14,7 @@ let g:tex_flavor = "latex"
 set cinoptions=:0,l1,g0,+0,N-s,(0,W4,j1
 set formatoptions=/nBjcroql
 
-set grepprg=rg\ --vimgrep\ --smart-case
+set grepprg=rg\ --vimgrep
 set grepformat=%f:%l:%c:%m
 command! -nargs=+ Grep silent grep! <args> | copen | wincmd p
 
