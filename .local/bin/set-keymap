@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
-set -x
+set -xe
 
-setxkbmap -option ""
+setxkbmap -option
 
-case "${1}" in
-    v|vi)
+case "$1" in
+    v|vi|vim)
         setxkbmap -option "caps:escape_shifted_capslock"
         ;;
     e|emacs)
