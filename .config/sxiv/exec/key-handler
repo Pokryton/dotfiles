@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-while read file
-do
+while read file; do
     case "$1" in
         "w")
             xclip -selection clipboard -t image/png "$file"
