@@ -48,8 +48,6 @@ alias ip='ip -color=auto'
 alias vim='nvim'
 alias vimdiff='nvim -d'
 
-alias gitroot='cd $(git rev-parse --show-toplevel)'
-
 # echo '( .-.)'
 
 source /usr/share/fzf/key-bindings.zsh

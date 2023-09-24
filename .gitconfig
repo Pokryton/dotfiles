@@ -13,6 +13,7 @@
 [alias]
 	ll = log --oneline --decorate
 	tree = log --graph --oneline --decorate --all
+	root = rev-parse --show-toplevel
 [grep]
 	extendedRegexp = true
 [credential]
