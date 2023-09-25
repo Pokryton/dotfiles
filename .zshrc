@@ -2,7 +2,7 @@ HISTFILE=~/.histfile
 HISTSIZE=10000
 SAVEHIST=10000
 
-setopt autocd
+setopt nobeep
 setopt longlistjobs
 setopt completeinword
 setopt sharehistory
