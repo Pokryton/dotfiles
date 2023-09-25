@@ -33,10 +33,6 @@ autoload -z edit-command-line
 zle -N edit-command-line
 bindkey "^X^E" edit-command-line
 
-autoload -Uz run-help
-(( ${+aliases[run-help]} )) && unalias run-help
-autoload -Uz run-help-git
-
 alias ls='eza'
 alias la='eza -a'
 alias ll='eza -al'
