@@ -4,11 +4,15 @@ set number relativenumber
 set ignorecase smartcase
 set splitright splitbelow
 
+set tabstop=4 shiftwidth=4
+set expandtab
+
 set autowrite
 set undofile
 set clipboard+=unnamedplus
 set title
 set scrolloff=2
+
 let g:tex_flavor = "latex"
 
 set cinoptions=:0,l1,g0,+0,N-s,(0,W4,j1
