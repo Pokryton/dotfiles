@@ -7,10 +7,13 @@ set splitright splitbelow
 set tabstop=4 shiftwidth=4
 set expandtab
 
+set wildmode=longest:full,full
+set wildignore+=*.o,*.obj
+
+set title
 set autowrite
 set undofile
 set clipboard+=unnamedplus
-set title
 set scrolloff=2
 
 let g:tex_flavor = "latex"
