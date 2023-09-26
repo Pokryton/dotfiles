@@ -3,7 +3,7 @@ return {
     dependencies = { 'nvim-lua/plenary.nvim' },
     cmd = "Telescope",
     keys = {
-        { "<C-p>", function() require("telescope.builtin").find_files() end },
+        { "<Leader>f", function() require("telescope.builtin").find_files() end },
         { "<Leader>;", function() require("telescope.builtin").buffers() end },
         { "<Leader>s", function() require("telescope.builtin").live_grep() end },
     },
