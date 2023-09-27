@@ -6,6 +6,8 @@ return {
             vim.cmd.colorscheme("gruvbox")
         end
     },
+    
+    { "stevearc/stickybuf.nvim", opts = {} },
 
     { "tpope/vim-dispatch", event = "VeryLazy" },
 
