@@ -2,6 +2,9 @@ patch:
   punctuator:
     import_preset: punct
 
+  key_binder:
+    import_preset: keymap
+
   speller/algebra:
     __patch:
       - pinyin:/en_eng_bufen
