@@ -17,7 +17,10 @@ return {
         keymaps = {
             ["`"] = "actions.tcd",
             ["~"] = "actions.cd",
-            ["."] = "actions.open_cmdline"
+            ["."] = "actions.open_cmdline",
+
+            ["<C-h>"] = false,
+            ["<C-j>"] = "actions.select_split"
         }
     }
 }
