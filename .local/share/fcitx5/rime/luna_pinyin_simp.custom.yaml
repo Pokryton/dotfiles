@@ -1,3 +1,10 @@
 patch:
   punctuator:
     import_preset: punct
+
+  speller/algebra:
+    __patch:
+      - pinyin:/en_eng_bufen
+      - pinyin:/abbreviation
+      - pinyin:/spelling_correction
+      - pinyin:/key_correction
