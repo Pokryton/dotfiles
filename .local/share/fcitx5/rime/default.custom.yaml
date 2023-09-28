@@ -6,4 +6,5 @@ patch:
     good_old_caps_lock: true
     switch_key:
       Shift_L: commit_code
-      Shift_R: commit_text
+      Shift_R: commit_code
+      Caps_Lock: commit_code
