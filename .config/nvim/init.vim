@@ -41,7 +41,7 @@ cnoremap <C-f> <Right>
 cnoremap <A-f> <S-Right>
 cnoremap <C-b> <Left>
 cnoremap <A-b> <S-Left>
-cnoremap <C-d> <Del>
+cnoremap <C-x> <C-f>
 
 inoremap <C-h> <Cmd>nohls<CR>
 nnoremap <C-h> <Cmd>nohls<CR>
@@ -52,5 +52,6 @@ noremap  <Tab> <Cmd>normal ==<CR>
 nnoremap <Leader><Leader> <C-^>
 nnoremap <Leader>, <Cmd>set invlist<CR>
 nnoremap <Leader>o :e <C-R>=expand("%:p:h") . "/"<CR>
+nnoremap <Leader>w <C-w>
 
 lua require("init-lua")

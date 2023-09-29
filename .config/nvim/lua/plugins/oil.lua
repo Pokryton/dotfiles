@@ -19,6 +19,10 @@ return {
             ["~"] = "actions.cd",
             ["."] = "actions.open_cmdline",
 
+            ["<Leader>d"] = "actions.tcd",
+            ["<Leader>a"] = "actions.cd",
+            ["<Leader>t"] = "actions.open_terminal",
+
             ["<C-h>"] = false,
             ["<C-j>"] = "actions.select_split"
         }
