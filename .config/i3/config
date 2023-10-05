@@ -190,11 +190,11 @@ bar {
 focus_follows_mouse no
 focus_on_window_activation focus
 
-bindsym $mod+slash        exec "firefox"
-bindsym $mod+u            exec "fcitx5-remote -e"
-bindsym $mod+Shift+u      exec "fcitx5 -d"
-bindsym Print             exec "flameshot gui"
-bindsym Pause             exec "playerctl play-pause"
+bindsym $mod+slash exec "firefox"
+bindsym $mod+u     exec "fcitx5-remote -e"
+bindsym Print      exec "flameshot gui"
+bindsym Pause      exec "playerctl play-pause"
+bindsym $mod+n     exec "dunstctl set-paused toggle"
 
 bindsym $mod+bracketleft  workspace prev
 bindsym $mod+bracketright workspace next
