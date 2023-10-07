@@ -20,7 +20,7 @@ set scrolloff=2
 
 let g:tex_flavor = "latex"
 
-set cinoptions=:0,l1,g0,N-s,(0,W4,j1
+set cinoptions=:0,l1,g0,N-s,E-s,(0,W4,j1
 set formatoptions=/nBjcroql
 
 set grepprg=rg\ --vimgrep
