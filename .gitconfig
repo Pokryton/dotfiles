@@ -5,6 +5,7 @@
 	defaultBranch = main
 [diff]
 	tool = nvimdiff
+	algorithm = patience
 [merge]
 	tool = nvimdiff
 	conflictstyle = diff3

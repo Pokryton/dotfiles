@@ -10,6 +10,8 @@ set expandtab
 set wildmode=longest:full,full
 set wildignore+=*.o,*.obj
 
+set diffopt+=algorithm:patience
+
 set title
 set autowrite
 set undofile
