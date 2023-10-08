@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+while true; do
+    percentage=$(acpi -b | grep -P -o '[0-9]+(?=%)')
+    if [ "$percentage" -le 20 ]; then
+        notify-send --urgency=critical "Battery low" "Level: ${percentage}%"
+    fi
+    sleep 300
+done
