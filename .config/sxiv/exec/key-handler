@@ -6,7 +6,7 @@ while read file; do
             xclip -selection clipboard -t image/png "$file"
             notify-send "Image $file copied to clipboard"
             ;;
-        "d")
+        "k")
             rm "$file"
             notify-send "File $file deleted"
             ;;
