@@ -220,7 +220,6 @@ assign [class="steam"]       → number 3
 assign [class="QQ"]          → number 2
 assign [class="thunderbird"] → number 9
 
-exec --no-startup-id "wlt-connect"
 exec --no-startup-id "set-keymap vi"
-exec --no-startup-id "$HOME/.fehbg"
 exec --no-startup-id "bat-notify"
+exec --no-startup-id "$HOME/.fehbg"
