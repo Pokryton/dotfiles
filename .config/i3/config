@@ -85,7 +85,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+b split h
+bindsym $mod+semicolon split h
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -195,6 +195,7 @@ bindsym Print      exec "flameshot gui"
 bindsym $mod+u     exec --no-startup-id "fcitx5-remote -e"
 bindsym Pause      exec --no-startup-id "playerctl play-pause"
 bindsym $mod+n     exec --no-startup-id "dunstctl set-paused toggle"
+bindsym $mod+b     exec --no-startup-id "boomer"
 
 bindsym $mod+bracketleft  workspace prev
 bindsym $mod+bracketright workspace next
