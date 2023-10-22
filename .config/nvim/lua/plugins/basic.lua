@@ -9,7 +9,11 @@ return {
     
     { "stevearc/stickybuf.nvim", opts = {} },
 
-    { "tpope/vim-dispatch", event = "VeryLazy" },
+    {
+        "tpope/vim-dispatch",
+        event = "VeryLazy",
+        keys = { { "<Leader>c", "<Cmd>Copen<CR>" } },
+    },
 
     {
         "tpope/vim-fugitive",
