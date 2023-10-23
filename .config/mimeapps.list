@@ -1,4 +1,7 @@
 [Default Applications]
+application/pdf=mupdf.desktop
+application/xps=mupdf.desktop
+application/epub=mupdf.desktop
 image/png=sxiv.desktop
 image/jpg=sxiv.desktop
 image/jpeg=sxiv.desktop
