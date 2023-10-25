@@ -2,7 +2,7 @@ return {
     "stevearc/oil.nvim",
     lazy = false,
     keys = {
-        { "-", "<Cmd>Oil<CR>" }
+        { "-", vim.cmd.Oil }
     },
     opts = {
         columns = {

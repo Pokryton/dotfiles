@@ -10,9 +10,14 @@ return {
     { "stevearc/stickybuf.nvim", opts = {} },
 
     {
+        "mbbill/undotree",
+        keys = { { "<Leader>U", vim.cmd.UndotreeToggle } }
+    },
+
+    {
         "tpope/vim-dispatch",
         event = "VeryLazy",
-        keys = { { "<Leader>c", "<Cmd>Copen<CR>" } },
+        keys = { { "<Leader>c", vim.cmd.Copen } }
     },
 
     {
