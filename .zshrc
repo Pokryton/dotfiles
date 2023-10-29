@@ -27,7 +27,7 @@ zstyle ':completion:*'                 matcher-list 'm:{a-z}={A-Z}'
 zstyle ':completion:*'                 special-dirs ..
 zstyle ':acceptline:*'                 rehash true
 
-PS1='[%F{red}%B%(?..%? )%b%F{green}%n%f@%F{magenta}%m %F{blue}%B%1~%b%f]$ '
+PS1='[%(?..%F{red}%B%?%b%f )%F{green}%n%f@%F{magenta}%m%f %F{blue}%B%1~%b%f]$ '
 
 autoload -z edit-command-line
 zle -N edit-command-line
