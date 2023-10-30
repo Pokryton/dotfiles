@@ -17,7 +17,7 @@ return {
     {
         "tpope/vim-dispatch",
         event = "VeryLazy",
-        keys = { { "<Leader>c", vim.cmd.Copen } },
+        keys = { { "<Leader>q", vim.cmd.Copen } },
         config = function()
             vim.g.dispatch_compilers = {
                 ["gcc"] = "gcc",
