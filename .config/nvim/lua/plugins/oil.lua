@@ -1,14 +1,10 @@
 return {
     "stevearc/oil.nvim",
     lazy = false,
-    keys = {
-        { "-", vim.cmd.Oil }
-    },
+    keys = { { "-", vim.cmd.Oil } },
     opts = {
         columns = {
-            "permissions",
-            "size",
-            "mtime"
+            "permissions", "size", "mtime"
         },
         skip_confirm_for_simple_edits = true,
         view_options = {
