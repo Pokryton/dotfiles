@@ -192,16 +192,17 @@ focus_on_window_activation focus
 
 bindsym $mod+slash   exec "firefox"
 bindsym Print        exec "flameshot gui"
-bindsym $mod+u       exec --no-startup-id "fcitx5-remote -e"
 bindsym Pause        exec --no-startup-id "playerctl play-pause"
-bindsym $mod+Shift+n exec --no-startup-id "dunstctl set-paused toggle"
-bindsym $mod+Shift+d exec --no-startup-id "dmenu_run"
 bindsym $mod+b       exec --no-startup-id "boomer"
+bindsym $mod+Shift+n exec --no-startup-id "dunstctl set-paused toggle"
+# bindsym $mod+u       exec --no-startup-id "fcitx5-remote -e"
+bindsym $mod+u       exec i3-nagbar -t warning -m 'Deprecated keybinding.'
 
 bindsym $mod+bracketleft  workspace prev
 bindsym $mod+bracketright workspace next
-bindsym $mod+Shift+bracketleft   move container to workspace prev
-bindsym $mod+Shift+bracketright  move container to workspace next
+
+bindsym $mod+Shift+bracketleft  move container to workspace prev
+bindsym $mod+Shift+bracketright move container to workspace next
 
 bindsym $mod+Tab workspace back_and_forth
 bindsym $mod+Shift+Tab move container to workspace back_and_forth
@@ -209,17 +210,13 @@ bindsym $mod+Shift+Tab move container to workspace back_and_forth
 for_window [window_role="About"]     floating enable
 for_window [window_role="page-info"] floating enable
 for_window [class="dialog"]          floating enable
-for_window [class="download"]        floating enable
-for_window [class="error"]           floating enable
-for_window [class="toolbar"]         floating enable
 
 for_window [class="QQ" instance="qq"]           floating enable
 for_window [class="firefox" instance="Places"]  floating enable
 for_window [class="steam"]                      floating enable
-for_window [class="Clash for Windows"]          floating enable
 
-assign [class="steam"]       → number 3
 assign [class="QQ"]          → number 2
+assign [class="steam"]       → number 3
 assign [class="thunderbird"] → number 9
 
 exec --no-startup-id "set-keymap vi"
