@@ -55,6 +55,6 @@ noremap  <Tab> <Cmd>normal ==<CR>
 
 nnoremap <Leader><Leader> <C-^>
 nnoremap <Leader>, <Cmd>set invlist<CR>
-nnoremap <Leader>o :e <C-R>=expand("%:p:h") . "/"<CR>
+nnoremap <Leader>o :e <C-R>=expand("%:p:h")<CR>/
 
 lua require("init-lua")
