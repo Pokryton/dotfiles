@@ -27,6 +27,10 @@ set grepprg=rg\ --vimgrep
 set grepformat=%f:%l:%c:%m
 command! -nargs=+ Grep silent grep! <args> | copen | wincmd p
 
+command! -nargs=+ -complete=shellcmd Read
+            \ new | setlocal buftype=nofile bufhidden=wipe noswapfile |
+            \ execute "read !<args>" | normal ggdd
+
 noremap H ^
 noremap L $
 
