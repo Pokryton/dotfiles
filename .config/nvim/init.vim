@@ -9,6 +9,7 @@ set expandtab
 
 set wildmode=longest:full,full
 set wildignore+=*.o,*.obj
+set wildignorecase
 
 set diffopt+=algorithm:patience
 
