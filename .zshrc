@@ -45,9 +45,6 @@ alias grep='grep --color=auto'
 alias diff='diff --color=auto'
 alias ip='ip -color=auto'
 
-alias vim='nvim'
-alias vimdiff='nvim -d'
-
 # echo '( .-.)'
 
 source /usr/share/fzf/key-bindings.zsh
