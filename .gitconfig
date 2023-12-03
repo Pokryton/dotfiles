@@ -4,13 +4,11 @@
 [init]
 	defaultBranch = main
 [diff]
-	tool = nvimdiff
 	algorithm = patience
 [merge]
-	tool = nvimdiff
 	conflictstyle = diff3
-[mergetool]
-	keepBackup = false
+[pull]
+	rebase = true
 [alias]
 	ll = log --oneline --decorate
 	tree = log --graph --oneline --decorate --all
