@@ -189,6 +189,7 @@ bar {
 
 focus_follows_mouse no
 focus_on_window_activation focus
+hide_edge_borders smart
 
 bindsym $mod+slash   exec "firefox"
 bindsym Print        exec "flameshot gui"
