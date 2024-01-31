@@ -7,7 +7,7 @@ return {
             vim.cmd.colorscheme("gruvbox")
         end
     },
-    
+
     { "stevearc/stickybuf.nvim", opts = {} },
 
     {
