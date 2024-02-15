@@ -16,7 +16,6 @@ set diffopt+=algorithm:patience
 set title
 set autowrite
 set undofile
-set cedit=<C-x>
 set clipboard+=unnamedplus
 set scrolloff=2
 
@@ -42,15 +41,6 @@ noremap [b <Cmd>bp<CR>
 noremap ]b <Cmd>bn<CR>
 
 tnoremap <Esc> <C-\><C-N>
-
-cnoremap <C-a> <Home>
-cnoremap <C-e> <End>
-cnoremap <C-f> <Right>
-cnoremap <A-f> <S-Right>
-cnoremap <C-b> <Left>
-cnoremap <A-b> <S-Left>
-cnoremap <C-d> <Del>
-cnoremap <A-t> <Home>tab <CR>
 
 inoremap <C-h> <Cmd>nohls<CR>
 nnoremap <C-h> <Cmd>nohls<CR>
