@@ -9,6 +9,8 @@
 	conflictstyle = diff3
 [pull]
 	rebase = true
+[stash]
+	showPatch = true
 [alias]
 	ll = log --oneline --decorate
 	tree = log --graph --oneline --decorate --all
