@@ -1,4 +1,4 @@
-HISTFILE=~/.histfile
+[ -z "$HISTFILE" ] && HISTFILE=~/.zhistory
 HISTSIZE=10000
 SAVEHIST=10000
 
@@ -8,35 +8,34 @@ setopt completeinword
 setopt sharehistory
 setopt histexpiredupsfirst
 setopt histignorespace
+setopt promptsubst
 
 bindkey -e
-stty stop undef
+stty -ixon
 
-eval $(dircolors -b)
+zstyle ':zim:prompt-pwd:fish-style' dir-length 1
 
-# zstyle :compinstall filename "$HOME/.zshrc"
-autoload -Uz compinit && compinit
-zstyle ':completion:*:default'         list-colors ${(s.:.)LS_COLORS}
-zstyle ':completion:*:descriptions'    format $'%{\e[0;31m%}completing %B%d%b%{\e[0m%}'
-zstyle ':completion:*:matches'         group 'yes'
-zstyle ':completion:*'                 group-name ''
-zstyle ':completion:*'                 menu select
-zstyle ':completion:*:warnings'        format $'%{\e[0;31m%}No matches for:%{\e[0m%} %d'
-zstyle ':completion:*:processes-names' command 'ps c -u ${USER} -o command | uniq'
-zstyle ':completion:*'                 matcher-list 'm:{a-z}={A-Z}'
-zstyle ':completion:*'                 special-dirs ..
-zstyle ':acceptline:*'                 rehash true
+autoload -Uz vcs_info
+precmd_vcs_info() { vcs_info }
+precmd_functions+=( precmd_vcs_info )
+zstyle ':vcs_info:git:*' formats ' (%b)'
 
-PS1='[%(?..%F{red}%B%?%b%f )%F{green}%n%f@%F{magenta}%m%f %F{blue}%B%1~%b%f]$ '
+PROMPT='%F{blue}%B$(prompt-pwd)%b%f%F{yellow}${vcs_info_msg_0_}%f%(?.. %F{red}[%?]%f) %# '
 
 autoload -z edit-command-line
 zle -N edit-command-line
 bindkey "^X^E" edit-command-line
 
-alias ls='eza'
-alias la='eza -a'
-alias ll='eza -al'
-alias tree='eza --tree'
+if [ -x "$(command -v eza)" ]; then
+    alias ls='eza'
+    alias la='eza -a'
+    alias ll='eza -al'
+    alias tree='eza --tree'
+else
+    alias ls='ls --color=auto'
+    alias la='ls --color=auto -a'
+    alias ll='ls --color=auto -al'
+fi
 
 alias mv='mv -i'
 alias cp='cp -i'
@@ -45,13 +44,22 @@ alias grep='grep --color=auto'
 alias diff='diff --color=auto'
 alias ip='ip -color=auto'
 
-# echo '( .-.)'
 
-[[ ! -r ~/.opam/opam-init/init.zsh ]] || source ~/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+## zim config
 
-source /usr/share/fzf/key-bindings.zsh
-source /usr/share/fzf/completion.zsh
+zstyle ':zim:zmodule' use 'degit'
 
-bindkey "^[c" capitalize-word
+ZIM_HOME=~/.zim
 
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# Download zimfw plugin manager if missing.
+if [[ ! -e ${ZIM_HOME}/zimfw.zsh ]]; then
+  curl -fsSL --create-dirs -o ${ZIM_HOME}/zimfw.zsh \
+      https://github.com/zimfw/zimfw/releases/latest/download/zimfw.zsh
+fi
+
+# Install missing modules and update ${ZIM_HOME}/init.zsh if missing or outdated.
+if [[ ! ${ZIM_HOME}/init.zsh -nt ${ZIM_CONFIG_FILE:-${ZDOTDIR:-${HOME}}/.zimrc} ]]; then
+  source ${ZIM_HOME}/zimfw.zsh init -q
+fi
+
+source ${ZIM_HOME}/init.zsh

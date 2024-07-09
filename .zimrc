@@ -1,0 +1,9 @@
+zmodule prompt-pwd
+
+zmodule zsh-users/zsh-completions --fpath src
+zmodule completion
+
+zmodule fzf
+
+zmodule zsh-users/zsh-syntax-highlighting
+zmodule zsh-users/zsh-autosuggestions
