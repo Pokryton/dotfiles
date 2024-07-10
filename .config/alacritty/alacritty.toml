@@ -1,26 +1,11 @@
 [font]
 size = 14.0
 
+[window]
+padding = { x = 2 }
+dynamic_padding = true
+
 [[keyboard.bindings]]
 action = "SpawnNewInstance"
 key = "Return"
 mods = "Control|Shift"
-
-[[keyboard.bindings]]
-action = "FirstOccupied"
-key = "H"
-mode = "Vi|~Search"
-mods = "Shift"
-
-[[keyboard.bindings]]
-action = "Last"
-key = "L"
-mode = "Vi|~Search"
-mods = "Shift"
-
-[scrolling]
-history = 1000
-
-[window.dimensions]
-columns = 80
-lines = 22
