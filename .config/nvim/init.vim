@@ -24,6 +24,12 @@ let g:tex_flavor = "latex"
 set cinoptions=:0,l1,g0,N-s,E-s,(0,W4,j1
 set formatoptions=/nBjcroql
 
+autocmd FileType html,css,javascript,typescript setlocal tabstop=2 shiftwidth=2
+autocmd FileType qf setlocal nonumber norelativenumber
+autocmd FileType go setlocal noexpandtab
+
+autocmd TermOpen * setlocal nonumber norelativenumber
+
 set grepprg=rg\ --vimgrep
 set grepformat=%f:%l:%c:%m
 command! -nargs=+ Grep silent grep! <args> | copen | wincmd p
