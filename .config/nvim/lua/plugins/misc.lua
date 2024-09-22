@@ -3,5 +3,7 @@ return {
 
   { "willothy/flatten.nvim", opts = {} },
 
-  { "rhysd/vim-llvm" },
+  { "rhysd/vim-llvm", ft = "llvm" },
+
+  { "tpope/vim-sleuth" },
 }
