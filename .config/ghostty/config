@@ -1,0 +1,14 @@
+font-family = Iosevka Term
+font-family = Sarasa Mono SC
+
+font-style = true
+
+font-size = 14
+
+mouse-hide-while-typing = true
+
+window-padding-balance = true
+
+command = fish --login --interactive
+
+keybind = ctrl+enter=unbind
